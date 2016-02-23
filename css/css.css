@@ -25,3 +25,5 @@ body {font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细�
 .turnToAdd input { margin-top: 10px;}
 .turnToAdd select { margin-top: 10px;}
 .left-nav li {}
+.btnSize {padding: 2px 5px;}
+.addManage label {margin-top: 20px;}
