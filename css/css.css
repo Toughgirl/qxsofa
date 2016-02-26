@@ -27,3 +27,7 @@ body {font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细�
 .left-nav li {}
 .btnSize {padding: 2px 5px;}
 .addManage label {margin-top: 20px;}
+.activityForm input{margin-top: 10px;}
+.activityForm select{margin-top: 10px;}
+.activityForm #box{margin-top: 10px;}
+.UpFileImg  img{width: 80px;height: 80px;}

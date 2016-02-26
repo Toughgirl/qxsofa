@@ -62,8 +62,21 @@
                 <li>
                     <a href="news.html"><i class="fa fa-th-large"></i> <span class="nav-label">新闻动态</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class="active"><a href="news.html">业界动态</a></li>
+                        <li class=""><a href="news.html">业界动态</a></li>
                         <li class=""><a href="newsActivity.html">活动公告</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="storeManage.html"><i class="fa fa-th-large"></i> <span class="nav-label">店铺管理</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class=""><a href="storeManage.html">店铺管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="qxdp.html"><i class="fa fa-th-large"></i> <span class="nav-label">千禧搭配</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class=""><a href="qxdp.html">类别管理</a></li>
+                        <li class="active"><a href="upLoadFile.html">图片上传</a></li>
                     </ul>
                 </li>
             </ul>
@@ -100,24 +113,20 @@
                         <div class="ibox-content">
                             <button type="button" class="btn btn-w-m btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>添加</button>
                         </div>
-                        <!--新闻列表-->
                         <table class="table table-bordered">
                             <tr>
-                                <th>ID</th>
-                                <th>标题</th>
-                                <th>作者</th>
-                                <th>时间</th>
+                                <th>系列</th>
+                                <th>类别</th>
+                                <th>图片</th>
                                 <th>操作</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>标题标题标题标题</td>
-                                <td>作者作者作者</td>
-                                <td>2016年10月20日</td>
+                                <td>系列</td>
+                                <td>类别</td>
+                                <td class="UpFileImg"><img src="../img/mvc_logo.png"><img src="../img/mvc_logo.png"></td>
                                 <td><button type="button" class="btn btn-primary btnSize">删除</button>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary btnSize"  data-toggle="modal" data-target="#myModal1">修改</button></td>
                             </tr>
                         </table>
-                        <!--添加新闻动态的弹出框内容-->
 
                     </div>
 
@@ -131,18 +140,23 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">添加管理员</h4>
+                        <h4 class="modal-title" id="myModalLabel">添加</h4>
                     </div>
                     <div class="modal-body">
                         <form class="activityForm">
-                            <input type="text" class="form-control" placeholder="标题">
-                            <input type="text" class="form-control" placeholder="作者">
-                            <!--时间插件-->
-                            <input type="text" class="form-control" placeholder="时间">
+                            <select class="form-control">
+                                <option value="1">系列1</option>
+                                <option value="2">系列2</option>
+                                <option value="3">系列3</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="1">类别1</option>
+                                <option value="2">类别2</option>
+                                <option value="3">类别3</option>
+                            </select>
                             <div id="box">
                                 <div id="test"></div>
                             </div>
-                            <textarea class="form-control" rows="9" placeholder="正文"></textarea>
                         </form>
                     </div>
                     <div class="modal-footer">
